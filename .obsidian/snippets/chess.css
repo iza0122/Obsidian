@@ -1,0 +1,8 @@
+/* Cascadia Chess Board Style */
+.chess-board {
+  font-family: 'Cascadia Code', 'Cascadia Mono', monospace;
+  font-size: 26px;
+  line-height: 1.4;
+  white-space: pre;
+  letter-spacing: 1.5px;
+}

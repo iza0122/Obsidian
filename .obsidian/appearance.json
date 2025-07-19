@@ -1,0 +1,10 @@
+{
+  "textFontFamily": "Cascadia Mono",
+  "baseFontSize": 18,
+  "monospaceFontFamily": "",
+  "enabledCssSnippets": [
+    "chess"
+  ],
+  "theme": "obsidian",
+  "interfaceFontFamily": "Consolas"
+}
