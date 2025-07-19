@@ -24,9 +24,12 @@ Một bàn cờ tiêu chuẩn sẽ được xếp như sau:
 Hiển nhiên chỉ với trạng thái có hay không có, làm sao chúng ta phân loại được các quân khác nhau?. Do đó ta sẽ tách bàn cờ này thành các lớp đơn giản hơn.
 
 Những con tốt trắng sẽ được biểu diễn dưới một dãy 64 bits như sau:
+```
  0000000000000000000000000000000000000000000000001111111100000000
+```
 Khá là khó nhìn phải không, ta sẽ định dạng lại một chút:
 
+```
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
@@ -35,9 +38,10 @@ Khá là khó nhìn phải không, ta sẽ định dạng lại một chút:
 0 0 0 0 0 0 0 0
 1 1 1 1 1 1 1 1
 0 0 0 0 0 0 0 0
+```
 
 Tương tự với quân xe trắng:
-
+```
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
@@ -46,6 +50,8 @@ Tương tự với quân xe trắng:
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
 1 0 0 0 0 0 0 1
+```
+
 
 Tương tự với các quân còn lại.
 
