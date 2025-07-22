@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chess/Biểu diễn ván cờ.md",
-                "mode": "preview",
+                "file": "Code/enum.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Biểu diễn ván cờ"
+              "title": "enum"
             }
           }
         ]
@@ -191,12 +191,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "601f40fa4311f18d",
+  "active": "c3e529f98857ed1b",
   "lastOpenFiles": [
     "Chess/Mở đầu.md",
     "Chess/Biểu diễn ván cờ.md",
-    "Chess/Resources/Idea.png",
     "Chess/Resources/Little-Endian Rank-File Mapping.png",
+    "Chess/Resources/Idea.png",
+    "Code/enum.md",
+    "Untitled 1",
+    "Code",
     "Chess/Resources",
     "Pictures",
     "Pictures/Thế cờ bắt đầu tiêu chuẩn.png",

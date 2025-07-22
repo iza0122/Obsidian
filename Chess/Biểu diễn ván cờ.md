@@ -3,6 +3,7 @@ Ta sẽ chọn <font color="#ffff00">Bitboard</font> để biểu diễn ván c�
 Một bàn cờ vua tiêu chuẩn 8x8 có 64 ô cờ. Mỗi ô cờ chỉ có 2 trạng thái: Có quân cờ hoặc không có quân cờ. Với trạng thái này, ta có thể biểu diễn nó thông qua nhị phân. Chúng ta sẽ dùng 1 dãy 64 bits tượng trưng cho 64 ô cờ.
 - 0 không có quân.
 - 1 có quân.
+
 <font color="#ffff00">Một dãy như vậy  được gọi là 1 bitboard</font>
 Trùng hợp thay, ta có kiểu 🔢 **`unsigned long long`** (ULL) sử dụng 64 bits để lưu giá trị. Và ta sẽ sử dụng kiểu dữ liệu này xuyên suốt trò chơi. Tuy nhiên 1 bitboard chỉ có thể biểu diễn cho 1 loại quân (có phân biệt màu).
 
@@ -71,7 +72,7 @@ Dưới đây là 1 số phép toán:
 - Greater One Sets (Nếu có 1 hoặc nhiều hơn 1 giá trị true, trả về true. Ngược lại trả về false)
 # 4. Shifting bitboard 
 Hiểu đơn giản là cách di chuyển quân cờ trên bitboard
-<font color="#ffff00">Lưu ý:</font> ta sẽ dùng Little-Endian Rank-File Mapping
+<font color="#ffff00">Lưu ý:</font> ta sẽ dùng [Little-Endian Rank-File Mapping](https://www.chessprogramming.org/Square_Mapping_Considerations#LittleEndianRankFileMapping)
 
 ![[Little-Endian Rank-File Mapping.png]]
 
@@ -82,7 +83,7 @@ Trong cách này:
 
 <font color="#ffff00">Note:</font> 
 - Dãy 64 bits khi đó được đánh số như sau: 63 62 61 ... 2 1 0.
-- Vì chỉ số vuông được mã hóa dưới dạng lũy thừa của 2 trong một bitboard, nên phép nhân hoặc chia lũy thừa của 2 tương đương với việc cộng hoặc trừ chỉ số vuông.
+- Vì chỉ số vuông được mã hóa dưới dạng lũy thừa của 2 trong một bitboard, nên phép nhân hoặc chia lũy thừa của 2 tương đương với việc <font color="#ffff00">cộng hoặc trừ chỉ số</font>.
 
 Để di chuyển, ta chỉ cần (+) hoặc (-) với một lượng:
 
